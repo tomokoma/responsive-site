@@ -1,0 +1,178 @@
+charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #14c0c9;
+}
+a:visited
+{
+    color: #0f949b;
+}
+a:hover
+{
+    color: #0f949b;
+}
+a:active
+{
+    color: #16d6e0;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.profile {
+  background-image: url("../images/neko.jpg");/*背景として画像読み込んでいます。*/
+  height: 500px;/*ここで高さ設定です。*/
+  width: 100%;/*横幅設定してます。*/
+  background-size: cover;/*縦横比維持してます。*/
+  background-position: center center;/*背景画像のポジション設定です。*/
+}
+
+.block-center,
+section .container,
+#skills i
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.abel,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore
+{
+    font-family: 'Abel', sans-serif;
+}
+
+.uppercase,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore
+{
+    text-transform: uppercase;
+}
+section
+{
+    padding: 60px 0;
+}
+section .container
+{
+    width: 90%;
+}
+section h2
+{
+    font-size: 3.2rem;
+}
+#skills
+{
+    background-color: #bea300;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+#skills h2
+{
+    margin-bottom: 60px;
+    color: #fdfcf6;
+}
+#skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px;
+    padding: 20px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #fdfcf6;
+}
+#skills i
+{
+    font-size: 4.5rem;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #14c0c9;
+}
+#skills h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #14c0c9;
+}
+
+
+@media (max-width: 768px) {
+    /*ここからがスマホに効くスタイルシートです。*/
+    
+.profile {
+  height: 250px;/*ここで高さ設定です。*/
+}
+
+#skills .skill-box{
+          margin-bottom:50px;
+}
+    #skills .container{
+        flex-direction: column;
+
+    }
+    
+
+    /*ここまでがスマホに効くスタイルシートです。*/
+}
+.sample {
+    margin: 10px auto;
+    width:200px;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#fff;
+    background-color:#49a9d4;
+    border-radius:5px;
+}
